@@ -13,7 +13,7 @@ X_test <- read.table(file = "UCI HAR Dataset/test/X_test.txt")
 y_test <- read.table(file = "UCI HAR Dataset/test/y_test.txt")
 subject_test <- read.table(file = "UCI HAR Dataset/test/subject_test.txt")
 #train values
-X_train <- ead.table(file = "UCI HAR Dataset/train/X_train.txt")
+X_train <- read.table(file = "UCI HAR Dataset/train/X_train.txt")
 y_train <- read.table(file = "UCI HAR Dataset/train/y_train.txt")
 subject_train <- read.table(file = "UCI HAR Dataset/train/subject_train.txt")
 
