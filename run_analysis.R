@@ -41,7 +41,7 @@ train <- merge(activity_labels, train_beta[relevant_variables], by = "ID_activit
 #merge test and train in one dataset
 dataset_beta <- rbind(test,train)
 # remove the activity ID: not required
-dataset <- dataset_beta[2:75]
+dataset <- dataset_beta[2:68]
 
 # clean up intermediate steps
 # not required but i don't like to leave all these unused variables
