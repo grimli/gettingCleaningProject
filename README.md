@@ -56,6 +56,8 @@ Below is described as  each requiremnt is fulfilled:
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
    * Line 51 summarize the data as required calculating the mean value grouping the data both on activity and subject. We have 6 activities and 30 subjects iresulting in the 180 rows in the dataframe dataset_2.
 
+As stated in the previous section both the final dataseti are "Tidy Data": there is a column for each variable measured (including two descriptive columns to lable the measuremenst) and a measurement for all the variables in each row. I have decide to manage mean and std values as indipendent variables: this choice in this context is supported by the fact that later in the requirements we are asked to calculate the mean values of these variables and this choice permits to mage the required aggregation in one step.
+
 ## Script step by step
 Below the description of the script step by step
 
