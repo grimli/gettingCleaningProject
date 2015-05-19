@@ -6,10 +6,24 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 as required in the project description
 
-The scripts assumes that the data are unconpressed in the working directory in a directory named "UCI HAR Dataset". This is the directory name generated unzipping the file.
+The scripts assumes that the data are unconpressed in the working directory in a subdirectoryi named "*UCI HAR Dataset*". This is the directory name generated unzipping the compressed file.
 
-The script genarates two dataframe named dataset and dataset_2. In dataset there will be the expanded data, in dataset_2 the summarized data
-Both these dataframe are "Tidy Data" because: I have a column for each variable measured (and two descriptive columns to lable the measuremenst) and a measurement for all the variables in each row. 
+The script genarates two dataframes named **dataset** and **dataset_2**. 
+In dataset there will be the expanded data (requirements up to number 4). 
+
+```
+> head(dataset[,1:8])
+  activity subject tBodyAcc-mean()-X tBodyAcc-mean()-Y tBodyAcc-mean()-Z tBodyAcc-std()-X tBodyAcc-std()-Y tBodyAcc-std()-Z  [...]
+1  WALKING      12         0.2160924      -0.004176104       -0.15008372     -0.074291588      -0.06226707       -0.5661365   ...
+2  WALKING      12         0.3434905      -0.059664993       -0.12323190     -0.001657743       0.11093762       -0.5071731   ...
+3  WALKING      12         0.3090925      -0.021860848       -0.10267598     -0.011803899       0.05489846       -0.5147740   ...
+4  WALKING      12         0.1918730       0.024524630       -0.09281903     -0.075637849      -0.10773918       -0.5591353   ...
+5  WALKING      12         0.2842238       0.001572040       -0.09911351     -0.099672146      -0.09454807       -0.5786313   ...
+6  WALKING      12         0.3613846      -0.017113522       -0.09523884     -0.048902785      -0.09180568       -0.5544868   ...
+```
+
+In dataset_2 there will be the summarized data (requiremnt 5).
+Both these dataframe are "Tidy Data": there is a column for each variable measured (including two descriptive columns to lable the measuremenst) and a measurement for all the variables in each row. 
 
 ## Project reqirements
 - Merges the training and the test sets to create one data set.
